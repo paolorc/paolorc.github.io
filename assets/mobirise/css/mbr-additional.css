@@ -439,11 +439,11 @@ h6,
 #menu-0 .dropdown-item:hover,
 #menu-0 .link:focus,
 #menu-0 .dropdown-item:focus {
-  color: #c0a375;
+  color: black;
 }
 #menu-0 .link[aria-expanded="true"],
 #menu-0 .dropdown-menu {
-  background: #0b6625;
+  background: grey;
 }
 #menu-0 .nav-dropdown-sm .link:focus,
 #menu-0 .nav-dropdown-sm .link:hover,
@@ -455,7 +455,7 @@ h6,
 #menu-0 .nav-dropdown-sm,
 #menu-0 .nav-dropdown-sm .link[aria-expanded="true"],
 #menu-0 .nav-dropdown-sm .dropdown-menu {
-  background: #109436;
+  background: rgb(39, 170, 224);
 }
 #menu-0 .bg-color.transparent .link {
   color: #ffffff;
@@ -470,7 +470,7 @@ h6,
 }
 #menu-0 .link[aria-expanded="true"],
 #menu-0 .dropdown-item[aria-expanded="true"] {
-  color: #c0a375!important;
+  color: white!important;
 }
 #features6-7 P {
   color: #ffffff;
