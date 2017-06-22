@@ -92,9 +92,10 @@ h6,
   background-color: #f28281 !important;
 }
 .btn-primary {
-  background-color: #c0a375;
-  border-color: #c0a375;
+  background-color: #8ABF4A;
+  border-color: white;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -102,8 +103,8 @@ h6,
 .btn-primary:active,
 .btn-primary.active {
   color: #ffffff;
-  background-color: #a07e49;
-  border-color: #a07e49;
+  background-color: #20A7E0;
+  border-color: #20A7E0;
 }
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -369,7 +370,7 @@ h6,
 }
 .mbr-footer p a,
 .mbr-footer ul a {
-  color: #c0a375;
+  color: black;
 }
 .mbr-footer-content li::before,
 .mbr-footer .mbr-contacts li::before {
@@ -443,7 +444,7 @@ h6,
 }
 #menu-0 .link[aria-expanded="true"],
 #menu-0 .dropdown-menu {
-  background: grey;
+  background: #8ABF4A;
 }
 #menu-0 .nav-dropdown-sm .link:focus,
 #menu-0 .nav-dropdown-sm .link:hover,
@@ -455,7 +456,8 @@ h6,
 #menu-0 .nav-dropdown-sm,
 #menu-0 .nav-dropdown-sm .link[aria-expanded="true"],
 #menu-0 .nav-dropdown-sm .dropdown-menu {
-  background: rgb(39, 170, 224);
+  background: #8ABF4A;
+  opacity: 0.7;
 }
 #menu-0 .bg-color.transparent .link {
   color: #ffffff;
@@ -473,10 +475,10 @@ h6,
   color: white!important;
 }
 #features6-7 P {
-  color: #ffffff;
+  color: black;
 }
 #features6-7 H4 {
-  color: #ffffff;
+  color: black;
 }
 #social-buttons1-6 .mbr-section-title {
   color: #000000;
@@ -486,7 +488,7 @@ h6,
   color: #ffffff;
 }
 #features1-g .striped .mbr-cards-col:nth-child(2n+1) {
-  background-color: #000000;
+  background-color: #8ABF4A;
 }
 #contacts5-b p,
 #contacts5-b .list-group-text,
