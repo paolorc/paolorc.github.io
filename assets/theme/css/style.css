@@ -384,17 +384,18 @@
     opacity: 0.85; }
 
 .btn-white-outline {
-  background: none;
-  border-color: #fff;
-  color: #fff; }
+  background: #8ABF4A;
+  border-color: #8ABF4A;
+  color: white;
+  text-transform: uppercase; }
   .btn-white-outline:focus, .btn-white-outline.focus, .btn-white-outline:active, .btn-white-outline.active {
     color: #535353;
     background-color: #fff;
     border-color: #fff; }
   .btn-white-outline:hover {
-    color: #535353;
-    background-color: #fff;
-    border-color: #fff; }
+    color: white;
+    background-color: #20A7E0;
+    border-color: #20A7E0; }
   .btn-white-outline.disabled, .btn-white-outline:disabled {
     color: #535353 !important;
     background-color: #fff !important;
@@ -1737,7 +1738,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     text-align: center;
     width: 3.5rem; }
   .mbr-company .list-group-text {
-    color: #fff;
+    color: black;
     font-family: "Raleway";
     font-size: 0.875rem;
     line-height: 1.6;
@@ -2172,4 +2173,10 @@ html.is-builder .article .lead:not([data-app-remove-it]) + div .btn {
 	padding: 0;
 	top: 0;
 	left: -2400px;
+}
+
+body, h6 {
+    font-size: 0.854rem;
+    letter-spacing: 0.03rem;
+    font-weight: lighter;
 }
