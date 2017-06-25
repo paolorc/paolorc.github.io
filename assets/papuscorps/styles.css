@@ -1,0 +1,15 @@
+.form-hidden {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+}
+
+input[type="checkbox"]:checked ~ .form-hidden {
+	opacity: 1;
+	max-height: 100px;
+	overflow: visible;
+}
+
+.mbr-gallery-filter li:hover {
+  color: #white;
+}
