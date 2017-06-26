@@ -13,3 +13,13 @@ input[type="checkbox"]:checked ~ .form-hidden {
 .mbr-gallery-filter li:hover {
   color: #white;
 }
+
+.gallery-event-parent {
+   padding: 5px;
+}
+
+.mbr-footer-content .btn-footer {
+	display: block;
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
