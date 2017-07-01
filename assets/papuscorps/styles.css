@@ -10,8 +10,12 @@ input[type="checkbox"]:checked ~ .form-hidden {
 	overflow: visible;
 }
 
+#social-buttons1-6 .mbr-section-title {
+    color: white;
+}
+
 .mbr-gallery-filter li:hover {
-  color: #white;
+  color: white;
 }
 
 .gallery-event-parent {
@@ -37,4 +41,57 @@ input[type="checkbox"]:checked ~ .form-hidden {
     color: white;
     background-color: #20A7E0;
     border-color: #20A7E0; 
+}
+
+
+#menu-0 .dropdown-item, #menu-0 .nav-dropdown-sm .link {
+    font-size: 0.75rem;
+    letter-spacing: 0.03rem;
+}
+.nav-dropdown .dropdown-item {
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+}
+
+#menu-0 .link[aria-expanded="true"], #menu-0 .dropdown-menu {
+    background: #20A7E0;
+    letter-spacing: 0.03rem;
+}
+
+#features6-7 H4 {
+    color: #2C262D;
+    letter-spacing: 0.03rem;
+}
+
+.mbr-cards .card-title {
+    letter-spacing: 0.03rem;
+    color:#2C262D;
+}
+
+#features1-g .striped .mbr-cards-col:nth-child(2n+1) {
+    background-color: white;
+}
+
+.btn-primary {
+  background-color: #20A7E0;
+  border-color: #20A7E0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active {
+  color: #ffffff;
+  background-color: #8ABF4A;
+  border-color: #8ABF4A;
+}
+
+.mbr-footer-content .btn-footer {
+    letter-spacing: 0.03rem;
+}
+
+.btn-primary {
+    letter-spacing: 0.03rem;
 }
