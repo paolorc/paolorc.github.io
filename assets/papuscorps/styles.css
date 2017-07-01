@@ -11,7 +11,7 @@ input[type="checkbox"]:checked ~ .form-hidden {
 }
 
 .mbr-gallery-filter li:hover {
-  color: #white;
+  color: white;
 }
 
 .gallery-event-parent {
@@ -22,4 +22,9 @@ input[type="checkbox"]:checked ~ .form-hidden {
 	display: block;
 	margin-right: 2rem;
 	margin-left: 2rem;
+}
+
+.btn-white-outline {
+    background: #20A7E0;
+    border-color: #20A7E0;
 }
