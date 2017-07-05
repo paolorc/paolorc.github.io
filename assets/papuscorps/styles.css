@@ -1,31 +1,32 @@
 .form-hidden {
-	opacity: 0;
-	max-height: 0;
-	overflow: hidden;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
 }
 
-input[type="checkbox"]:checked ~ .form-hidden {
-	opacity: 1;
-	max-height: 100px;
-	overflow: visible;
+input[type="checkbox"]:checked~.form-hidden {
+    opacity: 1;
+    max-height: 100px;
+    overflow: visible;
 }
 
 #social-buttons1-6 .mbr-section-title {
     color: white;
+    letter-spacing: 0.03rem;
 }
 
 .mbr-gallery-filter li:hover {
-  color: white;
+    color: white;
 }
 
 .gallery-event-parent {
-   padding: 5px;
+    padding: 5px;
 }
 
 .mbr-footer-content .btn-footer {
-	display: block;
-	margin-right: 2rem;
-	margin-left: 2rem;
+    display: block;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .btn-white-outline {
@@ -35,25 +36,31 @@ input[type="checkbox"]:checked ~ .form-hidden {
 
 .btn-white-outline:hover {
     background-color: #8ABF4A;
-    border-color: #8ABF4A; 
+    border-color: #8ABF4A;
 }
-.btn-white-outline:focus, .btn-white-outline.focus, .btn-white-outline:active, .btn-white-outline.active {
+
+.btn-white-outline:focus,
+.btn-white-outline.focus,
+.btn-white-outline:active,
+.btn-white-outline.active {
     color: white;
     background-color: #20A7E0;
-    border-color: #20A7E0; 
+    border-color: #20A7E0;
 }
 
-
-#menu-0 .dropdown-item, #menu-0 .nav-dropdown-sm .link {
+#menu-0 .dropdown-item,
+#menu-0 .nav-dropdown-sm .link {
     font-size: 0.75rem;
     letter-spacing: 0.03rem;
 }
+
 .nav-dropdown .dropdown-item {
     font-weight: 700;
     letter-spacing: 0.03rem;
 }
 
-#menu-0 .link[aria-expanded="true"], #menu-0 .dropdown-menu {
+#menu-0 .link[aria-expanded="true"],
+#menu-0 .dropdown-menu {
     background: #20A7E0;
     letter-spacing: 0.03rem;
 }
@@ -65,7 +72,7 @@ input[type="checkbox"]:checked ~ .form-hidden {
 
 .mbr-cards .card-title {
     letter-spacing: 0.03rem;
-    color:#2C262D;
+    color: #2C262D;
 }
 
 #features1-g .striped .mbr-cards-col:nth-child(2n+1) {
@@ -73,19 +80,20 @@ input[type="checkbox"]:checked ~ .form-hidden {
 }
 
 .btn-primary {
-  background-color: #20A7E0;
-  border-color: #20A7E0;
-  color: #ffffff;
-  text-transform: uppercase;
+    background-color: #20A7E0;
+    border-color: #20A7E0;
+    color: #ffffff;
+    text-transform: uppercase;
 }
+
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
 .btn-primary:active,
 .btn-primary.active {
-  color: #ffffff;
-  background-color: #8ABF4A;
-  border-color: #8ABF4A;
+    color: #ffffff;
+    background-color: #8ABF4A;
+    border-color: #8ABF4A;
 }
 
 .mbr-footer-content .btn-footer {
@@ -97,44 +105,44 @@ input[type="checkbox"]:checked ~ .form-hidden {
 }
 
 .header-title {
-  color: white;
+    color: white;
 }
 
 .header-subtitle {
-  color: white;
+    color: white;
 }
 
-.block-section-colored{
-  background-color: #20A7E0;
-  color: white;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.block-section-colored {
+    background-color: #20A7E0;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .modal-header {
-  text-align: center;
-  font-weight: 700;
-  letter-spacing: 0.03rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
 }
 
 .modal-form {
-  padding-left: 30px;
-  padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .form-control {
-  min-height: 39px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+    min-height: 39px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .form-text-area {
-  padding-top: 7px;
-  padding-bottom: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .close {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .nav-dropdown .dropdown-menu {
@@ -146,10 +154,17 @@ input[type="checkbox"]:checked ~ .form-hidden {
     height: 3.1rem;
 }
 
-.mbr-slider .carousel-indicators li, .mbr-slider .carousel-indicators .active {
+.mbr-slider .carousel-indicators li,
+.mbr-slider .carousel-indicators .active {
     background: #20A7E0;
 }
+
 .mbr-slider .carousel-indicators .active {
     border: 4px solid #8ABF4A;
     background: #8ABF4A;
+}
+
+.mbr-figure {
+    padding: 0;
+    margin-right: 60px;
 }
