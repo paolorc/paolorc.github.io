@@ -134,73 +134,53 @@
 				</div>
 				
 				<!-- Modal Body -->
-				<form role="form" class="modal-form">
+				<form role="form" class="modal-form" method="post" action="form.php">
 					<div class="form-group" style="margin-top: 16px">
-						<label for="exampleInputName">Nombres</label>
-						<input type="email" class="form-control" id="exampleInputName" placeholder="Ingrese su nombre"/>
+						<label for="inputName">Nombres</label>
+						<input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre" name="f_name" value="<?php echo htmlspecialchars($_POST['f_name']); ?>"/>
+						<?php echo "<p class='text-danger'>$errName</p>";?>
 					</div>
 					<div class="form-group">
-						<label for="exampleInputEmail1">Correo electronico</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@correo.com"/>
+						<label for="inputEmail">Correo electronico</label>
+						<input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com" name="f_email_from" value="<?php echo htmlspecialchars($_POST['f_email_from']); ?>"/>
+						<?php echo "<p class='text-danger'>$errEmail</p>";?>
 					</div>
 					<div class="form-group">
-						<label for="exampleInputPassword1">Asunto</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Asunto"/>
+						<label for="inputSubject">Asunto</label>
+						<input type="text" class="form-control" id="inputSubject" placeholder="Asunto" name="f_subject" value="<?php echo htmlspecialchars($_POST['f_subject']); ?>"/>
+						<?php echo "<p class='text-danger'>$errSubject</p>";?>
 					</div>
 					<div class="form-group">
-						<label for="InputComment">Comentario</label>
-						<textarea type="text" class="form-control form-text-area" placeholder="Ingrese su comentario"></textarea>
+						<label for="InputComment">Consulta</label>
+						<textarea type="text" class="form-control form-text-area" placeholder="Ingrese su consulta" name="f_content" rows="3" value="<?php echo htmlspecialchars($_POST['f_content']); ?>"></textarea>
+						<?php echo "<p class='text-danger'>$errCons</p>";?>
 					</div>
 					<div class="form-group">
-						<input type="checkbox" name="cotizacion"/>
-			<label for="cotizacion">Cotizacion?</label>
+						<input type="checkbox" name="f_inc_prod	"/>
+						<label for="cotizacion">¿Desea enviar cotización?</label>
 						<div class="form-group form-hidden">
-							<label for="producto1">Carwash</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_1">Natural Gloss</label>
+							<input type="number" id="prod_1" name="prod_1_amount" placeholder="Cantidad" value="0" min="0" max="10">
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Heavy Duty Spot Cleaner</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_2">Odor Eliminator</label>
+							<input type="number" id="prod_2" name="prod_2_amount" placeholder="Cantidad" value="0" min="0" max="10">
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Tire Shine</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_3">CarWash</label>
+							<input type="number" id="prod_3" name="prod_3_amount" placeholder="Cantidad" value="0" min="0" max="10">
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Natural Gloss</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_4">Heavy Duty Spot Cleaner</label>
+							<input type="number" id="prod_4" name="prod_4_amount" placeholder="Cantidad" value="0" min="0" max="10">
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Odor Eliminator</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_5">Tire Shine</label>
+							<input type="number" id="prod_5" name="prod_5_amount" placeholder="Cantidad" value="0" min="0" max="10">
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Paños de Microfibra</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_6">Pa&ntilde;os de microfibra</label>
+							<input type="number" id="prod_6" name="prod_6_amount" placeholder="Cantidad" value="0" min="0" max="10">
 						</div>
 					</div>
 				</form>
@@ -208,11 +188,11 @@
 				<!-- Modal Footer -->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-					<button type="submit"  class="btn btn-primary">Enviar</button>
+					<button type="submit" class="btn btn-primary">Enviar</button>
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 <!--Footer -->
 	<section class="mbr-section mbr-section-md-padding mbr-footer footer2" id="contacts2-a" style="background-color: white; padding-top: 60px; padding-bottom: 60px;">
 		<div class="container">
