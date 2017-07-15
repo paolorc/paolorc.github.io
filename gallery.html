@@ -137,50 +137,46 @@
 				<form role="form" class="modal-form" method="post" action="form.php">
 					<div class="form-group" style="margin-top: 16px">
 						<label for="inputName">Nombres</label>
-						<input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre" name="f_name" value="<?php echo htmlspecialchars($_POST['f_name']); ?>"/>
-						<?php echo "<p class='text-danger'>$errName</p>";?>
+						<input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre" name="f_name"/>
 					</div>
 					<div class="form-group">
 						<label for="inputEmail">Correo electronico</label>
-						<input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com" name="f_email_from" value="<?php echo htmlspecialchars($_POST['f_email_from']); ?>"/>
-						<?php echo "<p class='text-danger'>$errEmail</p>";?>
+						<input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com" name="f_email_from"/>
 					</div>
 					<div class="form-group">
 						<label for="inputSubject">Asunto</label>
-						<input type="text" class="form-control" id="inputSubject" placeholder="Asunto" name="f_subject" value="<?php echo htmlspecialchars($_POST['f_subject']); ?>"/>
-						<?php echo "<p class='text-danger'>$errSubject</p>";?>
+						<input type="text" class="form-control" id="inputSubject" placeholder="Asunto" name="f_subject"/>
 					</div>
 					<div class="form-group">
 						<label for="InputComment">Consulta</label>
-						<textarea type="text" class="form-control form-text-area" placeholder="Ingrese su consulta" name="f_content" rows="3" value="<?php echo htmlspecialchars($_POST['f_content']); ?>"></textarea>
-						<?php echo "<p class='text-danger'>$errCons</p>";?>
+						<textarea type="text" class="form-control form-text-area" placeholder="Ingrese su consulta" name="f_content" rows="3"></textarea>
 					</div>
 					<div class="form-group">
 						<input type="checkbox" name="f_inc_prod	"/>
 						<label for="cotizacion">¿Desea enviar cotización?</label>
 						<div class="form-group form-hidden">
-							<label for="prod_1">Natural Gloss</label>
-							<input type="number" id="prod_1" name="prod_1_amount" placeholder="Cantidad" value="0" min="0" max="10">
+							<label for="prod_1" class="col col-form-label">Natural Gloss</label>
+							<div class="col-10"><input type="number" id="prod_1" class="form-control" name="prod_1_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="prod_2">Odor Eliminator</label>
-							<input type="number" id="prod_2" name="prod_2_amount" placeholder="Cantidad" value="0" min="0" max="10">
+							<label for="prod_2" class="col col-form-label">Odor Eliminator</label>
+							<div class="col-10"><input type="number" id="prod_2" class="form-control" name="prod_2_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="prod_3">CarWash</label>
-							<input type="number" id="prod_3" name="prod_3_amount" placeholder="Cantidad" value="0" min="0" max="10">
+							<label for="prod_3" class="col col-form-label">CarWash</label>
+							<div class="col-10"><input type="number" id="prod_3" class="form-control" name="prod_3_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="prod_4">Heavy Duty Spot Cleaner</label>
-							<input type="number" id="prod_4" name="prod_4_amount" placeholder="Cantidad" value="0" min="0" max="10">
+							<label for="prod_4" class="col col-form-label">Heavy Duty Spot Cleaner</label>
+							<div class="col-10"><input type="number" id="prod_4" class="form-control" name="prod_4_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="prod_5">Tire Shine</label>
-							<input type="number" id="prod_5" name="prod_5_amount" placeholder="Cantidad" value="0" min="0" max="10">
+							<label for="prod_5" class="col col-form-label">Tire Shine</label>
+							<div class="col-10"><input type="number" id="prod_5" class="form-control" name="prod_5_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="prod_6">Pa&ntilde;os de microfibra</label>
-							<input type="number" id="prod_6" name="prod_6_amount" placeholder="Cantidad" value="0" min="0" max="10">
+							<label for="prod_6" class="col col-form-label">Pa&ntilde;os de microfibra</label>
+							<div class="col-10"><input type="number" id="prod_6" class="form-control" name="prod_6_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 					</div>
 				</form>
