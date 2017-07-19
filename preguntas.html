@@ -89,47 +89,7 @@
 
 </section>
 
-
-	<section class="mbr-section mbr-section-md-padding mbr-footer footer2" id="contacts2-a" style="background-color: white; padding-top: 60px; padding-bottom: 60px;">
-
-		<div class="container">
-			<div class="row">
-				<div class="mbr-company card col-xs-12 col-md-6 col-lg-4">
-					<div><img src="assets/images/greenclean2-265x95.png" class="card-img-top"></div>
-					<div class="card-block">
-						<p class="card-text"></p>
-					</div>
-					<ul class="list-group list-group-flush">
-						<li class="list-group-item">
-							<span class="list-group-icon"><span class="etl-icon icon-phone mbr-iconfont-company-contacts3"></span></span>
-							<span class="list-group-text">+1+51 (1) 99407-7860</span>
-						</li>
-						<li class="list-group-item">
-							<span class="list-group-icon"><span class="etl-icon icon-map-pin mbr-iconfont-company-contacts3"></span></span>
-							<span class="list-group-text">Jr. El Camino 364,<br>Urb. La Ensenada,La Molina Lima, Perú</span>
-						</li>
-						<li class="list-group-item active">
-							<span class="list-group-icon"><span class="etl-icon icon-envelope mbr-iconfont-company-contacts3"></span></span>
-							<span class="list-group-text"><a href="#">contacto@greenclean.com.pe</a></span>
-						</li>
-					</ul>
-				</div>
-				<div class="mbr-footer-content col-xs-12 col-md-6 col-lg-4">
-					<div class="mbr-section-btn">
-						<a class="btn btn-lg btn-white btn-white-outline btn-footer" href="#">Productos</a>
-					</div>
-					<div class="mbr-section-btn">
-						<a class="btn btn-lg btn-white btn-white-outline btn-footer" data-toggle="modal" data-target="#myModalNorm">Ver Contacto</a>
-					</div>
-				</div>
-				<div class="col-xs-12 col-md-12 col-lg-4" style="padding-top:20px; padding-bottom:20px;">
-					<div class="mbr-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe></div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Modal -->
+<!--Modal -->
 	<div class="modal fade" id="myModalNorm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -140,96 +100,113 @@
 						<span class="sr-only">Close</span>
 					</button>
 					<h4 class="modal-title" id="myModalLabel">
-						Contactanos
+						CONT&Aacute;CTANOS
 					</h4>
 				</div>
 				
 				<!-- Modal Body -->
-				<form role="form" style="padding: 10px;">
-					<div class="form-group">
-						<label for="exampleInputEmail1">Correo electronico</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" placeholder="ejemplo@correo.com"/>
+				<form role="form" class="modal-form" method="post" action="form.php">
+					<div class="form-group" style="margin-top: 16px">
+						<label for="inputName">Nombres</label>
+						<input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre" name="f_name"/>
 					</div>
 					<div class="form-group">
-						<label for="exampleInputPassword1">Asunto</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Asunto"/>
+						<label for="inputEmail">Correo electronico</label>
+						<input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com" name="f_email_from"/>
 					</div>
 					<div class="form-group">
-						<label for="InputComment">Comentario</label>
-						<textarea type="text" class="form-control" placeholder="Ingrese su comentario"></textarea>
+						<label for="inputSubject">Asunto</label>
+						<input type="text" class="form-control" id="inputSubject" placeholder="Asunto" name="f_subject"/>
 					</div>
 					<div class="form-group">
-						<input type="checkbox" name="cotizacion"/>
-            <label for="cotizacion">Cotizacion?</label>
+						<label for="InputComment">Consulta</label>
+						<textarea type="text" class="form-control form-text-area" placeholder="Ingrese su consulta" name="f_content" rows="3"></textarea>
+					</div>
+					<div class="form-group">
+						<input type="checkbox" name="f_inc_prod	"/>
+						<label for="cotizacion">¿Desea enviar cotización?</label>
 						<div class="form-group form-hidden">
-							<label for="producto1">Carwash</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_1" class="col col-form-label">Natural Gloss</label>
+							<div class="col-10"><input type="number" id="prod_1" class="form-control" name="prod_1_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Heavy Duty Spot Cleaner</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_2" class="col col-form-label">Odor Eliminator</label>
+							<div class="col-10"><input type="number" id="prod_2" class="form-control" name="prod_2_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Tire Shine</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_3" class="col col-form-label">CarWash</label>
+							<div class="col-10"><input type="number" id="prod_3" class="form-control" name="prod_3_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Natural Gloss</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_4" class="col col-form-label">Heavy Duty Spot Cleaner</label>
+							<div class="col-10"><input type="number" id="prod_4" class="form-control" name="prod_4_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Odor Eliminator</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_5" class="col col-form-label">Tire Shine</label>
+							<div class="col-10"><input type="number" id="prod_5" class="form-control" name="prod_5_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 						<div class="form-group form-hidden">
-							<label for="producto1">Paños de Microfibra</label>
-							<select class="form-control">
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
-							</select>
+							<label for="prod_6" class="col col-form-label">Pa&ntilde;os de microfibra</label>
+							<div class="col-10"><input type="number" id="prod_6" class="form-control" name="prod_6_amount" placeholder="Cantidad" value="0" min="0" max="10"></div>
 						</div>
 					</div>
-				</form>
-
 				<!-- Modal Footer -->
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-					<button type="submit"  class="btn btn-primary">Enviar</button>
+					<button type="submit" class="btn btn-primary">Enviar</button>
 				</div>
+
+				</form>
 			</div>
 		</div>
 	</div>
-	
 
+<!--Footer -->
+	<section class="mbr-section mbr-section-md-padding mbr-footer footer2" id="contacts2-a" style="background-color: white; padding-top: 60px; padding-bottom: 60px;">
+		<div class="container">
+			<div class="row">
+				<div class="mbr-company card col-xs-12 col-md-6 col-lg-4">
+					<div>
+						<img src="assets/images/greenclean2-265x95.png" class="card-img-top">
+					</div>
+					<div class="card-block">
+						<p class="card-text"></p>
+					</div>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">
+							<span class="list-group-icon"><span class="etl-icon icon-phone mbr-iconfont-company-contacts3"></span></span>
+							<span class="list-group-text">+1+51 (1) 99407-7860</span>
+						</li>
+						<li class="list-group-item active">
+							<span class="list-group-icon"><span class="etl-icon icon-envelope mbr-iconfont-company-contacts3"></span></span>
+							<span class="list-group-text"><a href="#">contacto@greenclean.com.pe</a></span>
+						</li>
+					</ul>
+				</div>
+				<div class="mbr-footer-content col-xs-12 col-md-6 col-lg-4" style="min-height: 288px; display: flex; flex-direction: column; justify-content: center;"> <!-- @TODO: pasar style a css -->
+					<div class="mbr-section-btn">
+						<a class="btn btn-lg btn-white btn-white-outline btn-footer" href="#">Productos</a>
+					</div>
+					<div class="mbr-section-btn">
+						<a class="btn btn-lg btn-white btn-white-outline btn-footer" data-toggle="modal" data-target="#myModalNorm">Ver Contacto</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-12 col-lg-4" style="padding-bottom:20px; color: black">
+					<div>
+						<div style="text-align: center;"><img src="assets/images/charity_logo.png"></div> <!-- @TODO: pasar style a css -->
+						<h3 style="padding-top: 20px; padding-bottom: 20px; text-align: center;">#savewatergivewater</h3> <!-- @TODO: pasar style a css -->
+						<p>Su compra brinda 21 dias de agua a una persona necesitada.</p>
+						<p>Estamos asociados con la ONG African Well Fund. <u>Mas informacion.</u></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-9" style="background-color: black; padding-top: 1.75rem; padding-bottom: 1.75rem;">
-
 		<div class="container">
 			<p class="text-xs-center">Copyright (c) 2016 Mobirise.</p>
 		</div>
 	</footer>
-
-	
 
 
 	<script src="assets/web/assets/jquery/jquery.min.js"></script>
