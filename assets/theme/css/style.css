@@ -1708,8 +1708,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   border: 0;
   margin-bottom: 0; }
   .mbr-company .card-img-top {
-    height: 58px;
-    margin-bottom: 1.57rem;
+    height: 100px;
     width: auto; }
   .mbr-company .card-block {
     background: none;
