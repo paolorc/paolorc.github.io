@@ -327,3 +327,7 @@ input[type="checkbox"]:checked~.form-hidden {
 .mbr-company .list-group-item.active .list-group-text {
     color: black;
 }
+
+.mbr-cards .card-img-top {
+    border-radius: 6px;
+}
