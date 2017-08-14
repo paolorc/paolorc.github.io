@@ -323,3 +323,7 @@ input[type="checkbox"]:checked~.form-hidden {
 .timeline-body > p + p {
   margin-top: 5px;
 }
+
+.mbr-company .list-group-item.active .list-group-text {
+    color: black;
+}
