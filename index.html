@@ -339,22 +339,22 @@
                 </div>
 
                 <!-- Modal Body -->
-                <form role="form" class="modal-form" method="post" action="form.php">
+                <form role="form" class="modal-form" id="contactForm" novalidate>
                     <div class="form-group" style="margin-top: 16px">
                         <label for="inputName">Nombres</label>
-                        <input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre" name="f_name" />
+                        <input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre" name="f_name" required data-validation-required-message="Favor de ingresar su nombre."/>
                     </div>
                     <div class="form-group">
                         <label for="inputEmail">Correo electronico</label>
-                        <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com" name="f_email_from" />
+                        <input type="email" class="form-control" id="inputEmail" placeholder="ejemplo@correo.com" name="f_email_from" required data-validation-required-message="Favor de ingresar su direccion de correo electrónico." />
                     </div>
                     <div class="form-group">
                         <label for="inputSubject">Asunto</label>
-                        <input type="text" class="form-control" id="inputSubject" placeholder="Asunto" name="f_subject" />
+                        <input type="text" class="form-control" id="inputSubject" placeholder="Asunto" name="f_subject" required data-validation-required-message="Ingrese el motivo de su consulta." />
                     </div>
                     <div class="form-group">
                         <label for="InputComment">Consulta</label>
-                        <textarea type="text" class="form-control form-text-area" placeholder="Ingrese su consulta" name="f_content" rows="3"></textarea>
+                        <textarea type="text" class="form-control form-text-area" id="inputQuery" placeholder="Ingrese su consulta" name="f_content" required data-validation-required-message="Ingrese su consulta." rows="3"></textarea>
                     </div>
                     <div class="form-group">
                         <input type="checkbox" name="f_inc_prod " />
@@ -469,6 +469,7 @@
     <script src="assets/theme/js/script.js"></script>
     <script src="assets/mobirise-slider-video/script.js"></script>
     <script src="assets/formoid/formoid.min.js"></script>
+    <script scr="assets/papuscorps/contacto.js"></script>
 
 
     <input name="animation" type="hidden">
